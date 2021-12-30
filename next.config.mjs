@@ -4,7 +4,8 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
   env: {
-    DEV_API: 'http://localhost:7777',
+    // DEV_API: 'http://localhost:7777',
+    DEV_API: 'https://zone-assets-api.vercel.app',
     PRODUCTION_API: 'https://zone-assets-api.vercel.app',
     GOOGLE_API: '',
   },

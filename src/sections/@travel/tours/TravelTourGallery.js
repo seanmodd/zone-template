@@ -47,7 +47,10 @@ export default function TravelTourGallery({ gallery }) {
           },
         }}
       >
-        <PhotoItem photo={gallery[0]} onOpenLightbox={() => handleOpenLightbox(gallery[0])} />
+        <PhotoItem
+          photo={gallery[0]}
+          onOpenLightbox={() => handleOpenLightbox(gallery[0])}
+        />
 
         <Box
           sx={{
@@ -57,7 +60,11 @@ export default function TravelTourGallery({ gallery }) {
           }}
         >
           {gallery.slice(1, 5).map((photo) => (
-            <PhotoItem key={photo} photo={photo} onOpenLightbox={() => handleOpenLightbox(photo)} />
+            <PhotoItem
+              key={photo}
+              photo={photo}
+              onOpenLightbox={() => handleOpenLightbox(photo)}
+            />
           ))}
         </Box>
       </Box>
